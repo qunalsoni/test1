@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>SUMO - Signup</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/custom.css" rel="stylesheet">
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900,100' rel='stylesheet' type='text/css'>
+<script>$(document).ready(function(){
+    //Handles menu drop down
+    $('.dropdown-menu').find('form').click(function (e) {
+        e.stopPropagation();
+    });
+});</script>
+</head>
+<body>
+<!--Header Starts Here-->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"><img src="images/sumo_logo.png" alt="Sumo"></a> <img src="images/nav_sep.gif" class="nav_separator" alt="nav_sep"/>
+      <!-- Mobile Header Right Section Header Starts Here-->
+      <div class="text-right no_display margin_mobile_btn">
+        <button type="submit" class="custom_btn mobile_srch_btn display_none"><span class="glyphicon glyphicon-search"></span></button>
+        <button type="submit" class="btn btn-default btn_seller">SELLERS <span class="arrow-right"></span></button>
+      </div>
+      <!-- Mobile Header Right Section Header Ends Here-->
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!--Mobile Header Menu Links added for Login and Register-->
+        <li class="no_display"><a href="#">LOGIN</a></li>
+        <li class="no_display"><a href="signup.html">REGISTER</a></li>
+        <!--Mobile Header Menu Links added for Login and Register-->
+        <li><a href="#">HOW IT WORKS</a></li>
+        <li><a href="#">FAQS</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right margin_top">
+        <li class="dropdown buyer_btn">
+          <button type="submit" class="btn btn-default btn_buyer dropdown-toggle display_none" data-toggle="dropdown">BUYERS <span class="caret"></span></button>
+          <!-- Login Dropdown Section Starts Here-->
+          <ul class="dropdown-menu dropdown_container custom_dropdown_container">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                      <input type="email" class="form-control border_box" id="exampleInputEmail2" placeholder="Email address" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputPassword2">Password</label>
+                      <input type="password" class="form-control border_box" id="exampleInputPassword2" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-success btn-block custom_btn">LOGIN</button>
+                    </div>
+                    <div class="text-center"> <a href="#" class="forgot_link">Forgot Password</a> </div>
+                  </form>
+                </div>
+                <div class="clearfix"></div>
+                <div class="text-center signup_bg">New User ? <strong><a href="signup.html">Sign up</a></strong> </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Login Dropdown Section Ends Here-->
+        </li>
+        <li>
+          <button type="submit" class="btn btn-default btn_seller display_none">SELLERS <span class="arrow-right"></span></button>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+</div>
+<!--Header Ends Here-->
+<div class="hot-properties-inner">
+  <div class="container">
+    <div class="row">
+      <div class="margin_top_70">
+        <!-- Signup Form Starts Here-->
+        <div class="col-md-5">
+          <h2>New User ? Sign Up</h2>
+          <form action="" method="post" accept-charset="utf-8" class="form" role="form">
+            <select class="form-control input-lg" name="selecttype" >
+              <option value="01">Select Type</option>
+              <option value="02">Type 1</option>
+              <option value="03">Type 2</option>
+            </select>
+            <div class="row">
+              <div class=" col-md-6">
+                <input type="text" name="firstname" value="" class="form-control input-lg" placeholder="First Name"  />
+              </div>
+              <div class=" col-md-6">
+                <input type="text" name="lastname" value="" class="form-control input-lg" placeholder="Last Name"  />
+              </div>
+            </div>
+            <div class="form-group has-error">
+        <label class="control-label" for="inputError1">Error Message will come here</label>
+        <input type="text" name="email" value="" class="form-control input-lg" placeholder="Email Address" id="inputError1"  />
+      </div>
+            
+            <input type="text" name="mobilenumber" value="" class="form-control input-lg" placeholder="Mobile Number"  />
+            <div class="row">
+              <div class=" col-md-6">
+                <input type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  />
+              </div>
+              <div class=" col-md-6">
+                <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  />
+              </div>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block signup-btn custom_btn" type="submit">SUBMIT</button>
+          </form>
+        </div>
+        <!-- Signup Form Ends Here-->
+        <div class="col-md-3 or_div">
+          <div class="border-width1"></div>
+          <div class="row circle_design">OR</div>
+          <div class="border-width1"></div>
+        </div>
+        <!-- Login Form Starts Here-->
+        <div class="col-md-4">
+          <h2>Login</h2>
+          <form action="" method="post" accept-charset="utf-8" class="form" role="form">
+            <input type="text" name="email" value="" class="form-control input-lg" placeholder="Email Address"  />
+            <input type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  />
+            <button class="btn btn-lg btn-primary btn-block signup-btn btn_buyer" type="submit">LOGIN</button>
+            <div class="text-right margin_top10"> <a href="#">Forgot Password?</a></div>
+          </form>
+        </div>
+        <!-- Login Form Ends Here-->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Footer starts here -->
+<div class="footer-wrapper">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 display_none">
+          <h5>TOP CITY PROPERTIES</h5>
+          <ul>
+            <li><a href="#">Chennai</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Delhi NCR</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Hyderabad</a></li>
+            <li><a href="#">Kerala</a></li>
+            <li><a href="#">Gujarat</a></li>
+            <li><a href="#">Chandigarh</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Faridabad</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Delhi NCR</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Hyderabad</a></li>
+            <li><a href="#">Kerala</a></li>
+            <li><a href="#">Gujarat</a></li>
+            <li><a href="#">Chandigarh</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>COMPANY</h5>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Request Info</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Report a Problem</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 display_none">
+          <h5>MORE LINKS</h5>
+          <ul>
+            <li><a href="#">Mobile Apps</a></li>
+            <li><a href="#">National Home</a></li>
+            <li><a href="#">Buy Our Services</a></li>
+            <li><a href="#">Residential Properties</a></li>
+            <li><a href="#">Home Finance</a></li>
+            <li><a href="#">Commercial Properties</a></li>
+            <li><a href="#">Services in India</a></li>
+            <li><a href="#">Builders in India</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Browse Properties in India</a></li>
+            <li><a href="#">New Projects</a></li>
+            <li><a href="#">Advertise your property</a></li>
+            <li><a href="#">Search Dealers</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Get Alerts</a></li>
+            <li><a href="#">Useful Links</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 social_icons">
+          <h5>SOCIAL MEDIA</h5>
+          <a href="#"><img src="images/fb.png" alt="facebook"/></a> <a href="#"><img src="images/twitter.png" alt="twitter"/></a> <a href="#"><img src="images/gplus.png" alt="googleplus"/></a><a href="#"><img src="images/linkedin.png" alt="linkedin"/></a> <a href="#"><img src="images/youtube.png" alt="youtube"/></a>
+          <h5 class="display_none">NEWSLETTER</h5>
+          <div class="display_none">
+            <input type="text" name="textfield" id="textfield" class="newsletter_txtbox" value="Enter Your Email Address"  onblur="if(this.value=='') this.value='Enter Your Email Address';" onFocus="if(this.value=='Enter Your Email Address') this.value='';">
+            <div class="pull-right">
+              <button type="submit" class="btn btn-default custom_btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border_top"></div>
+      <div class="copyright_wrapper">
+        <div class="pull-left copyright">Copyright &copy; 2014 SUMO Property. All Rights Reserved.</div>
+        <div class="text-right"><img src="images/sumo_logo_footer.png" alt="SUMO Logo Footer"/></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends here -->
+<!-- /.container -->
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

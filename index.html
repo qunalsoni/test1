@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>SUMO - Homepage</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/custom.css" rel="stylesheet">
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900,100' rel='stylesheet' type='text/css'>
+<!-- Flexslider -->
+<link rel="stylesheet" href="css/flexslider.css"/>
+<link rel="stylesheet" href="css/flipclock.css"/>
+<script>$(document).ready(function(){
+    //Handles menu drop down
+    $('.dropdown-menu').find('form').click(function (e) {
+        e.stopPropagation();
+    });
+});</script>
+</head>
+<body>
+<!--Header Starts Here-->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"><img src="images/sumo_logo.png" alt="Sumo"></a> <img src="images/nav_sep.gif" class="nav_separator" alt="nav_sep"/>
+      <!-- Mobile Header Right Section Header Starts Here-->
+      <div class="text-right no_display margin_mobile_btn">
+        <button type="submit" class="custom_btn mobile_srch_btn display_none"><span class="glyphicon glyphicon-search"></span></button>
+        <button type="submit" class="btn btn-default btn_seller">SELLERS <span class="arrow-right"></span></button>
+      </div>
+      <!-- Mobile Header Right Section Header Ends Here-->
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!--Mobile Header Menu Links added for Login and Register-->
+        <li class="no_display"><a href="#">LOGIN</a></li>
+        <li class="no_display"><a href="signup.html">REGISTER</a></li>
+        <!--Mobile Header Menu Links added for Login and Register-->
+        <li><a href="#">HOW IT WORKS</a></li>
+        <li><a href="#">FAQS</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right margin_top">
+        <li class="dropdown buyer_btn">
+          <button type="submit" class="btn btn-default btn_buyer dropdown-toggle display_none" data-toggle="dropdown">BUYERS <span class="caret"></span></button>
+          <!-- Login Dropdown Section Starts Here-->
+          <ul class="dropdown-menu dropdown_container custom_dropdown_container">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                      <input type="email" class="form-control border_box" id="exampleInputEmail2" placeholder="Email address" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputPassword2">Password</label>
+                      <input type="password" class="form-control border_box" id="exampleInputPassword2" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-success btn-block custom_btn">LOGIN</button>
+                    </div>
+                    <div class="text-center"> <a href="#">Forgot Password</a> </div>
+                  </form>
+                </div>
+                <div class="clearfix"></div>
+                <div class="text-center signup_bg"> New User ? <strong><a href="signup.html">Sign up</a></strong> </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Login Dropdown Section Ends Here-->
+        </li>
+        <li>
+          <button type="submit" class="btn btn-default btn_seller display_none">SELLERS <span class="arrow-right"></span></button>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+</div>
+<!--Header Ends Here-->
+<!--Main Banner Starts Here-->
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="container">
+      <div class="starter-template">
+        <h1>Get a property in 4 easy steps!</h1>
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="container marketing display_none">
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <div class="col-lg-3 col-ipad arrowicon1"> <img src="images/srch_icon.png" class="img-circle" alt="search_icon">
+              <h2>Search</h2>
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-3 col-ipad arrowicon2"> <img src="images/offer_icon.png" class="img-circle" alt="offer_icon">
+              <h2>Make an offer</h2>
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-3 col-ipad arrowicon1"> <img src="images/negotiate_icon.png" class="img-circle" alt="negotiate_icon">
+              <h2>Negotiate</h2>
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-3"> <img src="images/deal_icon.png" class="img-circle" alt="deal_icon">
+              <h2>Deal</h2>
+            </div>
+            <!-- /.col-lg-3 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!--Main Banner Mobile Starts Here-->
+        <div class="container marketing no_display">
+          <div class="row">
+            <div class="col-lg-mobile">Search</div>
+            <div class="col-lg-mobile"><img src="images/icon1.png" alt="arrow"/></div>
+            <div class="col-lg-mobile">Offer</div>
+            <div class="clearfix"></div>
+            <div class="pull-right custom_margin_right"><img src="images/icon5.png" alt="arrow"/></div>
+            <div class="clearfix"></div>
+            <div class="col-lg-mobile">Deal</div>
+            <div class="col-lg-mobile"><img src="images/icon6.png" alt="arrow"/></div>
+            <div class="col-lg-mobile">Negotiate</div>
+            <div class="clearfix"></div>
+            <div class="pull-left custom_margin_left"><img src="images/icon4.png" alt="arrow"/></div>
+          </div>
+        </div>
+        <!--Main Banner Mobile Ends Here-->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 main_search_bg">
+              <form>
+                <div class="input-group width_100">
+                  <div class="input-group-btn search-panel width_100">
+                    <button type="button" class="btn btn-default dropdown-toggle width_100 min-width-srch" data-toggle="dropdown"> <span id="search_concept">Select City</span> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">New Delhi</a></li>
+                      <li><a href="#its_equal">All</a></li>
+                      <li><a href="#greather_than">Greather than ></a></li>
+                      <li><a href="#less_than">Less than</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">Anything</a></li>
+                    </ul>
+                  </div>
+                  <input type="hidden" name="search_param" value="all" id="search_param">
+                  <input type="text" class="form-control map_marker width_100" name="x" placeholder="Enter locality or project or builder">
+                  <span class="input-group-btn width_100">
+                  <button class="btn btn-default srch_btn width_100" type="button"><span class="glyphicon glyphicon-search"></span> <span class="srch_text">SEARCH</span></button>
+                  </span> </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Main Banner Ends Here-->
+<!--Hot Properties Starts Here-->
+<div class="hot-properties-inner">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">HOT PROPERTIES</h2>
+      <!-- Header images carousel starts -->
+      <div class="header-carousel">
+        <div class="carousel_nav">
+          <!-- Carousel navigation -->
+          <a class="prev pull-left" id="car_prev" href="#"><i class="fa fa-chevron-left"><span class="glyphicon glyphicon-chevron-left"></span></i></a> <a class="next pull-right" id="car_next" href="#"><i class="fa fa-chevron-right"><span class="glyphicon glyphicon-chevron-right"></span></i></a> </div>
+        <div class="clearfix"></div>
+        <ul class="header-caro">
+          <!-- Item #1 -->
+          <!-- Each carousel should be enclosed inside "li" tag -->
+          <li>
+            <div class="rp-item">
+              <!-- Image. -->
+              <div class="rp-image"> <a href="#"><img src="images/1.jpg" alt=""/>
+                <div class="caption">
+                  <button type="submit" class="btn btn-default view_btn"><span class="glyphicon glyphicon-eye-open"></span> View Details</button>
+                </div>
+                </a> </div>
+              <div class="rp-details">
+                <!-- Title and para -->
+                <h5><a href="#">3 BHK, Independent/Builder Floor for Sale
+                  in New Gurgaon </a></h5>
+                <p>90 Lac</p>
+                <div class="flip-counter clock"></div>
+              </div>
+            </div>
+          </li>
+          <!-- Item #2 -->
+          <li>
+            <div class="rp-item">
+              <div class="rp-image"> <a href="#"><img src="images/1.jpg" alt=""/>
+                <div class="caption">
+                  <button type="submit" class="btn btn-default view_btn"><span class="glyphicon glyphicon-eye-open"></span> View Details</button>
+                </div>
+                </a> </div>
+              <div class="rp-details">
+                <h5><a href="#">3 BHK, Independent/Builder Floor for Sale
+                  in Dwarka Gurgaon, Expressway</a></h5>
+                <p>1.5 Cr</p>
+              </div>
+            </div>
+          </li>
+          <!-- Item #3 -->
+          <li>
+            <div class="rp-item">
+              <div class="rp-image"> <a href="#"><img src="images/1.jpg" alt=""/>
+                <div class="caption">
+                  <button type="submit" class="btn btn-default view_btn"><span class="glyphicon glyphicon-eye-open"></span> View Details</button>
+                </div>
+                </a> </div>
+              <div class="rp-details">
+                <h5><a href="#">2 BHK,  3 BHK Independent Floor for Sale
+                  in Surajpur site, Greater Noida </a></h5>
+                <p>90 Lac - 1.2 Cr</p>
+              </div>
+            </div>
+          </li>
+          <!-- Item #4 -->
+          <li>
+            <div class="rp-item">
+              <div class="rp-image"> <a href="#"><img src="images/1.jpg" alt=""/>
+                <div class="caption">
+                  <button type="submit" class="btn btn-default view_btn"><span class="glyphicon glyphicon-eye-open"></span> View Details</button>
+                </div>
+                </a> </div>
+              <div class="rp-details">
+                <h5><a href="#">3 BHK, Independent/Builder Floor for Sale
+                  in Dwarka Gurgaon, Expressway</a></h5>
+                <p>1.5 Cr</p>
+              </div>
+            </div>
+          </li>
+          <!-- Item #5 -->
+          <li>
+            <div class="rp-item">
+              <div class="rp-image"> <a href="#"><img src="images/1.jpg" alt=""/>
+                <div class="caption">
+                  <button type="submit" class="btn btn-default view_btn"><span class="glyphicon glyphicon-eye-open"></span> View Details</button>
+                </div>
+                </a> </div>
+              <div class="rp-details">
+                <h5><a href="#">2 BHK,  3 BHK Independent Floor for Sale
+                  in Surajpur site, Greater Noida </a></h5>
+                <p>90 Lac - 1.2 Cr</p>
+              </div>
+            </div>
+          </li>
+          <!-- Item #6 -->
+          <li>
+            <div class="rp-item">
+              <div class="rp-image"> <a href="#"><img src="images/1.jpg" alt=""/>
+                <div class="caption">
+                  <button type="submit" class="btn btn-default view_btn"><span class="glyphicon glyphicon-eye-open"></span> View Details</button>
+                </div>
+                </a> </div>
+              <div class="rp-details">
+                <h5><a href="#">3 BHK, Independent/Builder Floor for Sale
+                  in Dwarka Gurgaon, Expressway</a></h5>
+                <p>1.5 Cr</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Hot Properties Ends Here-->
+<!--Popular Real Estate Brands Starts Here-->
+<div class="container brands_inner">
+  <div class="row">
+    <h2 class="text-center">POPULAR REAL ESTATE BRANDS</h2>
+    <!-- Brand images carousel starts -->
+    <div class="brand-carousel">
+      <div class="carousel_nav">
+        <!-- Carousel navigation -->
+        <a class="prev pull-left" id="car_prev1" href="#"><i class="fa fa-chevron-left"><span class="glyphicon glyphicon-chevron-left"></span></i></a> <a class="next pull-right" id="car_next1" href="#"><i class="fa fa-chevron-right"><span class="glyphicon glyphicon-chevron-right"></span></i></a> </div>
+      <div class="clearfix"></div>
+      <ul class="recent-posts-caro">
+        <!-- Item #1 -->
+        <!-- Each carousel should be enclosed inside "li" tag -->
+        <li>
+          <div class="rp-item">
+            <!-- Image. -->
+            <div class="rp-image"> <a href="#"><img src="images/brand1.gif" alt=""/></a> </div>
+          </div>
+        </li>
+        <!-- Item #2 -->
+        <li>
+          <div class="rp-item">
+            <!-- Image. -->
+            <div class="rp-image"> <a href="#"><img src="images/brand2.gif" alt=""/></a></div>
+          </div>
+        </li>
+        <!-- Item #3 -->
+        <li>
+          <div class="rp-item">
+            <!-- Image. -->
+            <div class="rp-image"> <a href="#"><img src="images/brand3.gif" alt=""/></a> </div>
+          </div>
+        </li>
+        <!-- Item #4 -->
+        <li>
+          <div class="rp-item">
+            <!-- Image. -->
+            <div class="rp-image"> <a href="#"><img src="images/brand4.gif" alt=""/></a> </div>
+          </div>
+        </li>
+        <!-- Item #5 -->
+        <li>
+          <div class="rp-item">
+            <!-- Image. -->
+            <div class="rp-image"> <a href="#"><img src="images/brand5.gif" alt=""/></a> </div>
+          </div>
+        </li>
+        <li>
+          <div class="rp-item">
+            <!-- Image. -->
+            <div class="rp-image"> <a href="#"><img src="images/brand6.gif" alt=""/></a> </div>
+          </div>
+        </li>
+        <li>
+          <div class="rp-item">
+            <!-- Image. -->
+            <div class="rp-image"> <a href="#"><img src="images/brand7.gif" alt=""/></a> </div>
+          </div>
+        </li>
+        <li>
+          <div class="rp-item">
+            <!-- Image. -->
+            <div class="rp-image"> <a href="#"><img src="images/brand8.gif" alt=""/></a> </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--Popular Real Estate Brands ends Here-->
+<!-- Customer Testimonials starts here -->
+<div class="customer-testi-inner">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">WHAT OUR CUSTOMER THINKS ...</h2>
+      <!-- Header images carousel starts -->
+      <div class="testimonial-carousel">
+        <div class="carousel_nav">
+          <!-- Carousel navigation -->
+          <a class="prev pull-left" id="car_prev2" href="#"><i class="fa fa-chevron-left"><span class="glyphicon glyphicon-chevron-left"></span></i></a> <a class="next pull-right" id="car_next2" href="#"><i class="fa fa-chevron-right"><span class="glyphicon glyphicon-chevron-right"></span></i></a> </div>
+        <div class="clearfix"></div>
+        <ul class="testi-caro">
+          <!-- Item #1 -->
+          <!-- Each carousel should be enclosed inside "li" tag -->
+          <li>
+            <div class="rp-item">
+              <!-- Image. -->
+              <div class="rp-image"><img src="images/pic1.gif" alt=""/></div>
+              <div class="rp-details">
+                <!-- Title and para -->
+                <h5>“The Best quality Lorem ipsum Ever!!
+                  dolor sit amet, consecutor adispicing 
+                  elit. Aliquam at portitior sem.
+                  Aliquam erat volupat condimentum
+                  sed!”<br/>
+                  <br/>
+                  <strong>Jaspri Kaur, Sector 1, Noida</strong></h5>
+              </div>
+            </div>
+          </li>
+          <!-- Item #2 -->
+          <li>
+            <div class="rp-item">
+              <div class="rp-image"><img src="images/pic2.gif" alt=""/></div>
+              <div class="rp-details">
+                <h5>“The Best quality Lorem ipsum Ever!!
+                  dolor sit amet, consecutor adispicing 
+                  elit. Aliquam at portitior sem.
+                  Aliquam erat volupat condimentum
+                  sed!”<br/>
+                  <br/>
+                  <strong>Sam Jain, Janakpuri, New Delhi</strong></h5>
+              </div>
+            </div>
+          </li>
+          <!-- Item #3 -->
+          <li>
+            <div class="rp-item">
+              <div class="rp-image"><img src="images/pic3.gif" alt=""/></div>
+              <div class="rp-details">
+                <h5>“The Best quality Lorem ipsum Ever!!
+                  dolor sit amet, consecutor adispicing 
+                  elit. Aliquam at portitior sem.
+                  Aliquam erat volupat condimentum
+                  sed!”<br/>
+                  <br/>
+                  <strong>Ashwin Rai, Sohna Road, Gurgaon</strong></h5>
+              </div>
+            </div>
+          </li>
+          <!-- Item #4 -->
+          <li>
+            <div class="rp-item">
+              <div class="rp-image"><img src="images/pic1.gif" alt=""/></div>
+              <div class="rp-details">
+                <h5>“The Best quality Lorem ipsum Ever!!
+                  dolor sit amet, consecutor adispicing 
+                  elit. Aliquam at portitior sem.
+                  Aliquam erat volupat condimentum
+                  sed!”<br/>
+                  <br/>
+                  <strong>Jaspri Kaur, Sector 1, Noida</strong></h5>
+              </div>
+            </div>
+          </li>
+          <!-- Item #5 -->
+          <li>
+            <div class="rp-item">
+              <div class="rp-image"><img src="images/pic2.gif" alt=""/></div>
+              <div class="rp-details">
+                <h5>“The Best quality Lorem ipsum Ever!!
+                  dolor sit amet, consecutor adispicing 
+                  elit. Aliquam at portitior sem.
+                  Aliquam erat volupat condimentum
+                  sed!”<br/>
+                  <br/>
+                  <strong>Ashwin Rai, Sohna Road, Gurgaon</strong></h5>
+              </div>
+            </div>
+          </li>
+          <!-- Item #6 -->
+          <li>
+            <div class="rp-item">
+              <div class="rp-image"><img src="images/pic3.gif" alt=""/></div>
+              <div class="rp-details">
+                <h5>“The Best quality Lorem ipsum Ever!!
+                  dolor sit amet, consecutor adispicing 
+                  elit. Aliquam at portitior sem.
+                  Aliquam erat volupat condimentum
+                  sed!”<br/>
+                  <br/>
+                  <strong>Sam Jain, Janakpuri, New Delhi</strong></h5>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="text-center margin_top">
+        <button type="submit" class="btn btn-default btn_testi">READ ALL TESTIMONIALS</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Customer Ends starts here -->
+<!-- Footer starts here -->
+<div class="footer-wrapper">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 display_none">
+          <h5>TOP CITY PROPERTIES</h5>
+          <ul>
+            <li><a href="#">Chennai</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Delhi NCR</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Hyderabad</a></li>
+            <li><a href="#">Kerala</a></li>
+            <li><a href="#">Gujarat</a></li>
+            <li><a href="#">Chandigarh</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Faridabad</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Delhi NCR</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Hyderabad</a></li>
+            <li><a href="#">Kerala</a></li>
+            <li><a href="#">Gujarat</a></li>
+            <li><a href="#">Chandigarh</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>COMPANY</h5>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Request Info</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Report a Problem</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 display_none">
+          <h5>MORE LINKS</h5>
+          <ul>
+            <li><a href="#">Mobile Apps</a></li>
+            <li><a href="#">National Home</a></li>
+            <li><a href="#">Buy Our Services</a></li>
+            <li><a href="#">Residential Properties</a></li>
+            <li><a href="#">Home Finance</a></li>
+            <li><a href="#">Commercial Properties</a></li>
+            <li><a href="#">Services in India</a></li>
+            <li><a href="#">Builders in India</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Browse Properties in India</a></li>
+            <li><a href="#">New Projects</a></li>
+            <li><a href="#">Advertise your property</a></li>
+            <li><a href="#">Search Dealers</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Get Alerts</a></li>
+            <li><a href="#">Useful Links</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 social_icons">
+          <h5>SOCIAL MEDIA</h5>
+          <a href="#"><img src="images/fb.png" alt="facebook"/></a> <a href="#"><img src="images/twitter.png" alt="twitter"/></a> <a href="#"><img src="images/gplus.png" alt="googleplus"/></a><a href="#"><img src="images/linkedin.png" alt="linkedin"/></a> <a href="#"><img src="images/youtube.png" alt="youtube"/></a>
+          <h5 class="display_none">NEWSLETTER</h5>
+          <div class="display_none">
+            <form>
+              <input type="text" name="textfield" id="textfield" class="newsletter_txtbox" placeholder="Enter Your Email Address">
+              <div class="pull-right">
+                <button type="submit" class="btn btn-default custom_btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="border_top"></div>
+      <div class="copyright_wrapper">
+        <div class="pull-left copyright">Copyright &copy; 2014 SUMO Property. All Rights Reserved.</div>
+        <div class="text-right"><img src="images/sumo_logo_footer.png" alt="SUMO Logo Footer"/></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Ends here -->
+<!-- /.container -->
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(e){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+		e.preventDefault();
+		var param = $(this).attr("href").replace("#","");
+		var concept = $(this).text();
+		$('.search-panel span#search_concept').text(concept);
+		$('.input-group #search_param').val(param);
+	});
+});
+    </script>
+<script src="js/jquery.js"></script>
+<!-- jQuery -->
+<script src="js/easing.js"></script>
+<!-- jQuery easing -->
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- Flex slider -->
+<script src="js/jquery.isotope.js"></script>
+<!-- Isotope -->
+<script src="js/custom.js"></script>
+<!-- Custom script -->
+<script src="js/flipclock.js"></script>
+<script type="text/javascript">
+	var clock = $('.clock').FlipClock(3600);
+</script>
+</body>
+</html>
